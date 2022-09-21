@@ -41,7 +41,7 @@ sudo chown root:<username> -R /tools/
 During the installation, do not press ‘Get Latest’.\
 On the Welcome screen you’ll be informed that you are running an unsupported version of Ubuntu. You can ignore this and press Next.\
 On the Select Install Type,\
-Fill in you Xilinx user credentials and press Next.\
+Fill in you Xilinx user credentials and press Next.
 
 On the Select Product to Install,\
 Select Vitis and press Next.\
@@ -49,7 +49,7 @@ On the Vitis Unified Software Platform,\
 (optionally) Deselect items/devices that you are not going to use to limit download time and save disk space.\
 On the Accept License Agreements,\
 Select all ‘I Agree’ and press Next\
-Rerun the installation to install Petalinux\
+Rerun the installation to install Petalinux
 ```
 ./Xilinx_Unified_2020.2_1118_1232_Lin64.bin
 ```
@@ -60,12 +60,14 @@ On the Select Product to install page, Select Petalinux (Linux only) and press N
 On the Accept License Agreements, Select all ‘I Agree’s and press Next.\
 On the Select Destination Directory, Press Next\
 On the Installation Summary, Press Install\
-After I successful installation, a message pups up referring to a missing requirement.\
+After I successful installation, a message pups up referring to a missing requirement.
+
 ```
 sudo apt-get install gawk
 ```
 
 Configure/install Petalinux
+
 ```
 cd /tools/Xilinx/PetaLinux/2020.2/bin/
 ./petalinux-v2020.2-final-installer.run
@@ -77,7 +79,8 @@ Accept that the installation directory is not empty.
 Download and install the Vivado y2k22 patch: https://support.xilinx.com/s/article/76960?language=en_US\
 Follow the instructions provided within the README file.\
 You have to provide the python version, which is version 3.\
-Execute the following command to successfully execute the patch.\
+Execute the following command to successfully execute the patch.
+
 ```
 Vivado/2020.2/tps/lnx64/python-3.8.3/bin/python3 y2k22_patch/patch.py
 ```
@@ -92,7 +95,8 @@ git clone https://github.com/Xilinx/PYNQ.git
 Create a dedicated board folder for the Zedbaord under /PYNQ/boards/\
 You'll notice that the /PYNQ/boards/ folder already contains supported board folders.\
 (note) The makefile will scan the /PYNQ/boards/ folder to enable/set build parameters.\
-(optionally) To limit the possibility of something going wrong, I deleted all supported boards folders/files and ending up with only the Zedboard board folders and files.\
+(optionally) To limit the possibility of something going wrong, I deleted all supported boards folders/files and ending up with only the Zedboard board folders and files.
+
 ```
 rm -fr ~/PYNQ/boards/Pynq-Z1
 rm -fr ~/PYNQ/boards/Pynq-Z2
@@ -104,7 +108,8 @@ Download the BSP file for the Zedboard from Xilinx.\
 This BSP file should have the same version as your PetaLinux/Vivado environment (2020.2).\
 You’ll notice that this version is published under the ‘Archive’ section.\
 The BSP for the Zedboard is roughly 100MB.\
-You will to provide your Xilinx credentials to start the download.\
+You will to provide your Xilinx credentials to start the download.
+
 ```
 cp ~/Downloads/avnet-digilent-zedboard-v2020.2-final.bsp ~/PYNQ/boards/ZED/
 ```
@@ -112,7 +117,8 @@ cp ~/Downloads/avnet-digilent-zedboard-v2020.2-final.bsp ~/PYNQ/boards/ZED/
 When compiling Pynq, the rootfs will be fetched from different mirror servers.\
 I noticed that some packaged and/or dependencies are not found resulting in a failed compilation. As a work around, download the ‘prebuilt board-agnostic image’.\ This image contains all packages/dependencies required to compile the rootfs.\
 You can find a link to this image om the pynq.io website (http://www.pynq.io/board.html).\
-Download the ‘PYNQ rootfs arm v2.7’ version and copy/move it to the ZED folder.\
+Download the ‘PYNQ rootfs arm v2.7’ version and copy/move it to the ZED folder.
+
 ```
 cp ~/Downloads/focal.arm.2.7.0_2021_11_17.tar.gz ~/PYNQ/boards/ZED/
 ```
@@ -151,7 +157,7 @@ make
 make install
 ```
 Depending on which bash/shell terminal you use, add the PATH export to either/both .profile and/or .bashrc.\
-(example PATH=/opt/qemu/bin:/opt/crosstool-ng/bin:$PATH)\
+(example PATH=/opt/qemu/bin:/opt/crosstool-ng/bin:$PATH)
 
 ### Build the PYNQ image
 Source the appropriate settings for Vitis and PetaLinux.
