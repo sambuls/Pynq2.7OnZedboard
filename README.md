@@ -18,7 +18,7 @@ While not officially supported by Vivado 2020.2, Ubuntu 18.04.6 will work.
 
 I used Ubuntu 18.04.6 within VirtualBox with sufficient RAM (>=12GB), Disk space (>=150GB) and CPU’s (>=4), Video Memory (>=96MB)
 The default number of CPUs is 1 and results in a kernel panic when booting the Ubuntu ISO.
-I noticed that the default Monitor Memory is to low resulting in a black screen on a secondary monitor after Ubuntu boots.
+I noticed that the default Monitor Memory is too low resulting in a black screen on a secondary monitor after Ubuntu boots.
 You can still changes these parameters after the virtual machine is created.
 Prepare Ubuntu
 ```
