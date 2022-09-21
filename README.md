@@ -144,7 +144,7 @@ As a result, you will receive an email with a .lic file that you can import in t
 
 #### Some additional stuff
 
-There is a check for qemu-arm version in the Makefile, uncommend this line
+There is a check for qemu-arm version in the Makefile, uncommend this line (nasty I know...)
 
 Install crosstool-ng
 ```
