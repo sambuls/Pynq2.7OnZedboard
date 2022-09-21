@@ -116,7 +116,7 @@ cp ~/Downloads/avnet-digilent-zedboard-v2020.2-final.bsp ~/PYNQ/boards/ZED/
 #### Root file system
 When compiling Pynq, the rootfs will be fetched from different mirror servers.\
 I noticed that some packaged and/or dependencies are not found resulting in a failed compilation. As a work around, download the ‘prebuilt board-agnostic image’.\ This image contains all packages/dependencies required to compile the rootfs.\
-You can find a link to this image om the pynq.io website (http://www.pynq.io/board.html).\
+You can find a link to this image om the pynq.io website (http://www.pynq.io/board.html). \
 Download the ‘PYNQ rootfs arm v2.7’ version and copy/move it to the ZED folder.
 
 ```
@@ -164,7 +164,10 @@ Source the appropriate settings for Vitis and PetaLinux.
 ```
 source <path-to-vitis>/Vitis/2020.2/settings64.sh
 source <path-to-petalinux>/petalinux-2020.2-final/settings.sh
-
+```
+Start the PYNQ build
+```
+cd ~\PYNQ\sdbuild\
 make PREBUILT=~/PYNQ/boards/ZED/focal.arm.2.7.0_2021_11_17.tar.gz BOARDS=ZED
 ```
 
