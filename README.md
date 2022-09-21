@@ -134,9 +134,9 @@ STAGE4_PACKAGES_ZED := xrt pynq ethernet pynq_peripherals
 #### Dependencies
 Install all dependencies by executing the provided setup script
 ```
-./PYNQ/sbuild.scripts.setup_host.sh
+./PYNQ/sbuild/scripts/setup_host.sh
 ````
-You also need to have the HDMI IP license!\
+You also need to have the HDMI IP license! (evaluation is ok)\
 Very important, if you don’t have this the compilation will fail!\
 In order do receive the HDMI IP you have to launch Vivado, press help and click on the license manager.\
 You need to search for the HDMI ip on the webpage that opens and link/bind it to the device that is going to use it. I selected the bind based on MAC address.\
