@@ -25,10 +25,12 @@ Prepare Ubuntu
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install build-essential
+sudo apt-get install vim git
+```
 Install Virtual Box Guest addition software (that is why we needed the build-essential)
 Reboot
-sudo apt-get install vim git
 Download Xilinx Unified 2020.2
+```
 cd ~/Downloads
 chmod 775 Xilinx_Unified_2020.2_1118_1232_Lin64.bin
 sudo mkdir -R /tools/Xilinx
@@ -37,7 +39,7 @@ sudo chown root:<username> -R /tools/
 ./ Xilinx_Unified_2020.2_1118_1232_Lin64.bin
 ```
 During the installation, do not press ‘Get Latest’.
-On the Welcom screen you’ll be informed that you are running an unsupported version of Ubuntu. You can ignore this and press Next.
+On the Welcome screen you’ll be informed that you are running an unsupported version of Ubuntu. You can ignore this and press Next.
 On the Select Install Type,
 Fill in you Xilinx user credentials and press Next.
 
