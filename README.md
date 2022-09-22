@@ -171,5 +171,15 @@ cd ~\PYNQ\sdbuild\
 make PREBUILT=~/PYNQ/boards/ZED/focal.arm.2.7.0_2021_11_17.tar.gz BOARDS=ZED
 ```
 
+If you receive the following error:
+```
+ERROR: [Common 17-70] Application Exception: Need an implemented design open to write bitstream. Aborting write_hw_platform..
+```
+You need to recheck your HDMI IP license and rerun the compilation.\
+When alterning VirtualBox settings (e.g. MAC address, or copying only a disk image to a new virtual machine) the origional HDMI IP license can not be reused.
+
+
 After a couple of hours you will have your ZED.img that you can flash to an SD card!
+
+
 
