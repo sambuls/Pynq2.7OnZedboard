@@ -178,6 +178,13 @@ ERROR: [Common 17-70] Application Exception: Need an implemented design open to 
 You need to recheck your HDMI IP license and rerun the compilation.\
 When alterning VirtualBox settings (e.g. MAC address, or copying only a disk image to a new virtual machine) the origional HDMI IP license can not be reused.
 
+If you receive the following error:
+```
+ERROR: [HLS 200-1023] Part 'xczu7ev-ffvc1156-2-i' is not installed.
+```
+You need to install the ultrascale devices. (I don't know why this is required since zedboard is not a member of the ultrascale family...)
+Open vivado->help->Add Design Tools or Devices, and select the ultrascale devices for installation.
+
 
 After a couple of hours you will have your ZED.img that you can flash to an SD card!
 
