@@ -171,6 +171,7 @@ cd ~\PYNQ\sdbuild\
 make PREBUILT=~/PYNQ/boards/ZED/focal.arm.2.7.0_2021_11_17.tar.gz BOARDS=ZED
 ```
 
+### Encountered errors
 If you receive the following error:
 ```
 ERROR: [Common 17-70] Application Exception: Need an implemented design open to write bitstream. Aborting write_hw_platform..
