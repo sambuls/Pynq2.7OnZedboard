@@ -186,6 +186,17 @@ ERROR: [HLS 200-1023] Part 'xczu7ev-ffvc1156-2-i' is not installed.
 You need to install the ultrascale devices. (I don't know why this is required since zedboard is not a member of the ultrascale family...)
 Open vivado->help->Add Design Tools or Devices, and select the ultrascale devices for installation.
 
+VirtualBox has a green turtle icon on its virtualisation.
+---------------------------------------------------------
+I've noticed a green turtle at the bottom of my Ubuntu virtual machine.
+This has to do with the suboptimal (hardware)virtualisation that (for me) resulted in a slow system behaviour and system crashes.
+To solve this, make sure that:
+1. the virtualisation option are enable in your bios,\
+2. windows is not blocking virtualisation by security features available on your host pc that uses virtualtion-based security\
+2.1 disable all option under: 'Core isolation' (press the windows flag on your keyboard and type 'core isolation')(https://www.tenforums.com/virtualization/172991-windows-vm-stucks-virtualbox-but-not-vmware-3.html)
+2.2 disable hyper-V in control panel (https://learn.microsoft.com/en-us/troubleshoot/windows-client/application-management/virtualization-apps-not-work-with-hyper-v)
+
+
 
 After a couple of hours you will have your ZED.img that you can flash to an SD card!
 
