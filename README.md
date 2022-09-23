@@ -187,7 +187,7 @@ You need to install the ultrascale devices. (I don't know why this is required s
 Open vivado->help->Add Design Tools or Devices, and select the ultrascale devices for installation.
 
 VirtualBox has a green turtle icon on its virtualisation.
----------------------------------------------------------
+
 I've noticed a green turtle at the bottom of my Ubuntu virtual machine.
 This has to do with the suboptimal (hardware)virtualisation that (for me) resulted in a slow system behaviour and system crashes.
 To solve this, make sure that:
